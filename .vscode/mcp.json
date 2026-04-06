@@ -1,0 +1,42 @@
+// {
+// 	"servers": {
+// 		"weather-server": {
+// 			"type": "stdio",
+// 			"command": "uv run",
+// 			"args": [
+// 				"mcp",
+// 				"dev",
+// 				"server.py"
+// 			]
+// 		}
+// 	},
+// 	"inputs": []
+// }
+
+{
+  "servers": {
+    "weather-server": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "server.py"]
+    }
+  },
+  "inputs": []
+}
+
+
+// {
+//   "name": "weather-server",
+//   "version": "1.0.0",
+//   "description": "Weather server MCP providing forecast and alert tools",
+//   "entry_point": "python server.py",
+//   "dependencies": [],
+//   "tools": {
+//     "get_forecast": {
+//       "description": "Get weather forecast for a latitude/longitude"
+//     },
+//     "get_alerts": {
+//       "description": "Get active weather alerts by state code"
+//     }
+//   }
+// }
